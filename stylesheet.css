@@ -1,0 +1,33 @@
+body {
+    background-color: #7FC7B9;
+    color: #2B6056;
+}
+
+input {
+    background-color: #b1ddd4;
+    margin: 5px;
+    border: solid;
+    border-width: thin;
+    border-color: #4d756d;
+}
+
+#spots {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border: none;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#spots::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #1C5B4F;
+  cursor: pointer;
+}

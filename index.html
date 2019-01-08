@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Keno!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>KENO</h1>
+    <hr>
+    <div id="top_settings">
+        <div id="spots_played_wrapper">
+            <span id="valBox"></span>
+            <input type="range" id="spots" name="volume" min="1" max="10" value="5" step="1">
+            <label for="spots">Spots 1-10</label>
+        </div>
+        <div id="number_of_games">
+            <label for="total_games">How many games in a row?</label>
+            <input type="text" id="total_games" name="games" required><br>
+        </div>
+        <div id="wager_wrapper">
+            <label for="wager_radio">Wager Amount (per game)</label>
+            <input type="radio" value="1" id="bet_1" name="wager" checked>$1</input>
+            <input type="radio" value="2" id="bet_2" name="wager">$2</input>
+            <input type="radio" value="5" id="bet_5" name="wager">$5</input>
+            <input type="radio" value="10" id="bet_10" name="wager">$10</input>
+        </div>
+        <div id="user_number_picks">
+            <label for="user_picks">Pick your numbers:</label>
+            <input type="text" id="picks" label="user_nums" name="users_picks"><br>
+        </div>
+        <div id="quick_pick_wrapper">
+            <label for="quick_pick_radio">Quick Pick?</label>
+            <p>
+                <input type="radio" id="quick_pick_yes" name="yes_no">Yes</input>
+            </p>
+            <p>
+                <input type="radio" id="quick_pick_no" name="yes_no" checked>No</input>
+            </p>
+        </div>
+        <input type="submit" id="submit_values" value="Lock in bet">
+        <input type="submit" id="play_game" value="Play Keno">
+    </div>
+    <hr>
+    <h2 id="game_results">Game stats and results:</h2>
+    <input type="submit" id="next_game" value="Next Game">
+    <input type="submit" id="quick_play" value="Quick Play">
+    <input type="submit" id="play_again" value="Play Again">
+    <p id="spot_display"></p>
+    <p id="total_games_display"></p>
+    <p id="wager_display"></p>
+    <p id="total_bet_display"></p>
+    <p id="user_num_display"></p>
+    <p id="winning_num_display"></p>
+    <hr>
+    <p id="matched_numbers"></p>
+    <p id="game_winnings"></p>
+    <p id="total_profit"></p>
+    <p id="games_left"></p>
+</body>
+</html>
+<script src="keno.js"></script>
